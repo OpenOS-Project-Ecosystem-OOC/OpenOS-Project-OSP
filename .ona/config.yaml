@@ -1,0 +1,15 @@
+tasks:
+  validate-readme:
+    name: Validate OSP README
+    command: |
+      test -f README.md
+      test "$(grep -c '^# ' README.md)" -eq 1
+      grep -Fq 'OpenOS-Project-OSP' README.md
+      if grep -Fiq 'Interested-Deving-1896' README.md; then
+        echo 'README contains the source profile identity.' >&2
+        exit 1
+      fi
+    triggeredBy:
+      - manual
+      - postDevcontainerStart
+      - prebuild
