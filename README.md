@@ -1,13 +1,14 @@
 # OpenOS-Project-OSP
 
-[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/OpenOS-Project-OSP/OpenOS-Project-OSP) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria)
-
 <!-- README-AUTO:start:badges -->
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/OpenOS-Project-OSP/OpenOS-Project-OSP)
 [![GitHub namespace](https://img.shields.io/badge/GitHub-OpenOS--Project--OSP-181717?logo=github&style=flat-square)](https://github.com/OpenOS-Project-OSP)
 [![GitLab mirror](https://img.shields.io/badge/GitLab-openos--project-fc6d26?logo=gitlab&logoColor=white&style=flat-square)](https://gitlab.com/openos-project)
 [![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-00aacc?style=flat-square)](https://openos-project-osp.github.io/OpenOS-Project-OSP/)
 [![README quality](https://github.com/OpenOS-Project-OSP/OpenOS-Project-OSP/actions/workflows/readme-quality.yml/badge.svg)](https://github.com/OpenOS-Project-OSP/OpenOS-Project-OSP/actions/workflows/readme-quality.yml)
 [![OpenCollective tiers](https://img.shields.io/badge/OpenCollective-support%20tiers-7FADF2?logo=opencollective&logoColor=white&style=flat-square)](https://opencollective.com/openos-project/contribute)
+[![KDE Eco](https://img.shields.io/badge/KDE%20Eco-guidance-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/)
+[![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/productworld/software/resources-and-energy-efficient-software-products)
 <!-- README-AUTO:end:badges -->
 
 **Operational continuity for open systems.**
@@ -45,6 +46,19 @@ account model and vocabulary:
 Other forges may call the same concepts an account, group, team, workspace,
 organization, repository, or project. Those labels do not change OSP's role or
 the provenance and synchronization boundaries of the hosted content.
+
+## Forge-neutral README subsystem
+
+OpenOS-Project-OSP consumes reusable policy and rendered-link engines from
+Fork-Sync-All through its profile publication pipeline. Its own README content
+remains OpenOS-Project-OSP-specific. The shared contract calls this hosting
+boundary a **namespace** and this repository a **project**, allowing an
+equivalent GitLab group/subgroup or another forge layout to participate without
+renaming it an organization.
+
+Subsystem files are generated consumers here; reusable changes are contributed
+to Fork-Sync-All and identity changes to the OpenOS-Project-OSP profile source,
+then published forward.
 
 ## Current focus
 
